@@ -28,6 +28,5 @@ ml4=list(s4)
 l3=ml3 + ml4
 
 l3.sort(key=lambda x: x[1])
-#orl3= sorted(l3, key=lambda x: x[1])
+
 print("Elementos de s3 y s4 ordenados por el número entero de cada tupla", l3)
-#print(sorted(l3, key=lambda l3: l3[1]))

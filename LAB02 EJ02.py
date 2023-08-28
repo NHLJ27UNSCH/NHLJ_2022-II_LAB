@@ -1,3 +1,5 @@
+#determinar la edad de postulantes, pero cuando se les realiza la entrevista sólo se les pregunta el año en que nacieron.
+
 def espacio():
     for i in range(20):
             print(' ')

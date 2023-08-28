@@ -1,19 +1,19 @@
+#Generador de contarseñas
 import random
 import string
 
+def gen_contraseña():
+    try:
+        longitud=int(input('Ingrese longitud: '))
 
-def generar_contraseña():
-    l_may = string.ascii_uppercase
-    l_min = string.ascii_lowercase
-    nums = string.digits
-    c_esp = string.punctuation
-    l_contraseña = []
-    for i in range(2):
-        l_contraseña.append(random.choice(l_may))
-        l_contraseña.append(random.choice(l_min))
-        l_contraseña.append(random.choice(nums))
-        l_contraseña.append(random.choice(c_esp))
-    contraseña=''.join(l_contraseña)
-    print(contraseña)
+        if longitud < 8:
+            print('La longitud debe ser mayor de 8 caracteres en adelante!')
+            gen_contraseña()
 
-generar_contraseña()
+        caract= string.ascii_letters + string.digits + string.punctuation
+        contraseña=''.join(random.choice(caract) for i in range(longitud))
+        print(contraseña)
+    except ValueError:
+        print('Valor no admitible!')
+        gen_contraseña()
+gen_contraseña()

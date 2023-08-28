@@ -2619,12 +2619,12 @@ countries = [
     }
 ]
 # Número total de idiomas
-all_languages = set()
+""" all_languages = set()
 for country in countries:
     for language in country["languages"]:
         all_languages.add(language)
 
-print(f"Número total de idiomas: {len(all_languages)}")
+print(f"Número total de idiomas: {len(all_languages)}") """
 
 #Diez idiomas más hablados
 def idiomas_mas_hablados():
@@ -2651,6 +2651,3 @@ def paises_mas_poblados():
     print("Top 20 países más poblados:")
     for country in top_populated_countries:
         print(f"{country['name']}: {country['population']} people")
-
-idiomas_mas_hablados()
-paises_mas_poblados()

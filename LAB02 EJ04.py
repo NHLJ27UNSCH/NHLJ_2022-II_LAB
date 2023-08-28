@@ -9,9 +9,11 @@ def promo_3000():
         precio_total=int(input('Precio total de compras: '))
         if precio_total>3000:
             total_a_pagar=precio_total*0.9
+            print('Monto a pagar mayor a 3000... Aplicando descuento de 10%\n------------------------------------\n')
             print(f'El precio final de la compra es: {total_a_pagar}')
         elif precio_total<3000:
             total_a_pagar=precio_total*0.95
+            print('Monto a pagar menor a 3000... Aplicando descuento de 5%\n-------------------------------------\n')
             print(f'El precio final de la compra es: {total_a_pagar}')
         else:
             espacio()

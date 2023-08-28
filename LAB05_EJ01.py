@@ -29,8 +29,8 @@ print("edad mediana:", edamed)
 
 
 #Edad promedio (suma de todos los elementos divididos por su número)
-pred=sum(edades)/canted
-print("promedio de edades:", pred)
+promed=sum(edades)/canted
+print("promedio de edades:", promed)
 
 
 #Rango de edades (máximo menos mínimo)
@@ -38,3 +38,12 @@ Raned=maxval-minval
 print("rango de edades:", Raned)
 
 #Comparar min-prom y max-prom mediante abs()
+comp_min=abs(minval-promed)
+comp_max=abs(maxval-promed)
+
+if comp_min < comp_max:
+    print("La diferencia mínima al promedio es menor.")
+elif comp_min > comp_max:
+    print("La diferencia máxima al promedio es menor.")
+else:
+    print("Las diferencias son iguales.")

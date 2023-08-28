@@ -1,5 +1,4 @@
-#EJ 01
-
+#crear un algoritmo que pueda obtener el área del terreno
 a= int(input('Base mayor:'))
 b= int(input('Altura:'))
 c= int(input('Base menor:'))

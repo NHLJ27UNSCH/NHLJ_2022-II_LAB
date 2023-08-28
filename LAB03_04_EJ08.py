@@ -1,4 +1,4 @@
-#E8
+#Inversión de palabras en una frase
 frase = "Aprendiendo Python con Edem"
 
 sep = frase.split(' ')          #Enlistar cada palabra
